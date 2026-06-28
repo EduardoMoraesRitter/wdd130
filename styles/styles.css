@@ -1,4 +1,4 @@
-/* WDD 130 - Home Page Layout (W03) */
+/* WDD 130 - Home Page Layout Enhancements (W04) */
 
 * {
     margin: 0;
@@ -13,10 +13,19 @@ body {
     padding: 16px;
 }
 
-/* Navigation */
+/* Limit page width and center content */
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Navigation - horizontal flex menu */
 nav {
     background-color: #1f3a5f;
     padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav a {
@@ -26,14 +35,9 @@ nav a {
     text-decoration: none;
 }
 
-main {
-    width: 600px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
 h1 {
     color: #1f3a5f;
+    border-bottom: 2px solid #1f3a5f;
 }
 
 /* Profile image inside main */
@@ -51,10 +55,23 @@ p {
     padding: 0;
 }
 
+/* Two-column grid: aside on the left, main on the right */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 16px;
+}
+
+main {
+    grid-column: 2;
+}
+
 /* Country highlight box */
 aside {
     width: 300px;
     position: relative;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 aside img {
