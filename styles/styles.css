@@ -1,0 +1,48 @@
+/* WDD 130 - Home Page Enhancement (W02) */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2b2b2b;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+main {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Profile image inside main */
+main img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+p {
+    padding: 0;
+}
+
+/* Country highlight box */
+aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 2px solid #1f3a5f;
+    padding: 16px;
+    background-color: #1f3a5f;
+    color: #ffffff;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 24px;
+    border-top: 2px solid #1f3a5f;
+    text-align: center;
+    padding-top: 12px;
+}
