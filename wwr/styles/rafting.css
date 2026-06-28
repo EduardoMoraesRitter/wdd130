@@ -25,6 +25,14 @@ header, main, footer {
     margin: 0 auto;
 }
 
+header {
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+footer {
+    border-top: 3px solid var(--secondary-color);
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
