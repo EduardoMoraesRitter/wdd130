@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A short quiz that tests basic HTML and CSS knowledge.">
+    <meta name="author" content="Eduardo Ritter">
+    <title>HTML and CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <p class="eyebrow">WDD 130 · Week 05</p>
+            <h1>HTML &amp; CSS Quiz</h1>
+            <p class="intro">Test your knowledge of the building blocks of the web.</p>
+        </header>
+
+        <form>
+            <div class="form-item">
+                <label for="q1"><span>1</span> What does the acronym CSS stand for?</label>
+                <input type="text" id="q1" name="q1" autocomplete="off" required>
+            </div>
+
+            <div class="form-item">
+                <label for="q2"><span>2</span> How are the <code>id</code> and <code>class</code> attributes different?</label>
+                <textarea id="q2" name="q2" rows="4" required></textarea>
+            </div>
+
+            <div class="form-item">
+                <label for="q3"><span>3</span> Which HTML element creates the largest heading?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose one...</option>
+                    <option value="h6">&lt;h6&gt;</option>
+                    <option value="heading">&lt;heading&gt;</option>
+                    <option value="h1">&lt;h1&gt;</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="q4"><span>4</span> How many pixels are in <code>1rem</code> by default in most browsers?</label>
+                <input type="number" id="q4" name="q4" min="0" required>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+</body>
+
+</html>
