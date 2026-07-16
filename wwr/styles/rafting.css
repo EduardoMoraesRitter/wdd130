@@ -217,7 +217,7 @@ footer {
 }
 
 .employees figcaption span {
-    color: var(--secondary-color);
+    color: var(--accent1-color);
 }
 
 /* Hero with overlays */
