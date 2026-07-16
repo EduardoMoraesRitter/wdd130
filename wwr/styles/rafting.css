@@ -115,35 +115,6 @@ footer {
     border: 1px solid var(--secondary-color);
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin: 0;
-    padding: 0;
-}
-
-.contact-form .form-item {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-}
-
-.contact-form label {
-    font-weight: bold;
-    margin-bottom: 4px;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    font-family: var(--body-font);
-    padding: 8px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 4px;
-}
-
 .contact-form fieldset.purpose {
     border: 1px solid var(--secondary-color);
     border-radius: 4px;
@@ -170,22 +141,6 @@ footer {
 .contact-form .checkbox-item label {
     margin: 0;
     font-weight: normal;
-}
-
-.contact-form button {
-    align-self: flex-start;
-    background-color: var(--primary-color);
-    color: #fff;
-    font-family: var(--heading-font);
-    font-size: 1rem;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: var(--accent1-color);
 }
 
 /* Figure rows: adventures (about.html) + employee profiles (contact.html) share this layout */
@@ -218,6 +173,145 @@ footer {
 
 .employees figcaption span {
     color: var(--accent1-color);
+}
+
+/* Home page: CTA + offerings grid + newsletter */
+.home-cta {
+    text-align: center;
+}
+
+.cta-button,
+.contact-form button,
+.newsletter button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.cta-button:hover,
+.contact-form button:hover,
+.newsletter button:hover {
+    background-color: var(--accent1-color);
+}
+
+.offerings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 32px 16px;
+}
+
+.offerings figure {
+    margin: 0;
+}
+
+.offerings img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+}
+
+.newsletter {
+    max-width: 480px;
+    margin: 32px auto;
+    padding: 24px;
+    text-align: center;
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+}
+
+.newsletter form,
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.newsletter .form-item,
+.contact-form .form-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.newsletter label,
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"],
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    font-family: var(--body-font);
+    padding: 8px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+}
+
+.newsletter button {
+    align-self: center;
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
+
+/* Trips page: card grid + overview table */
+.trips-intro {
+    text-align: center;
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 16px;
+}
+
+.trip-cards article {
+    margin: 0;
+    padding: 12px;
+    background-color: var(--accent2-color);
+    border-radius: 6px;
+}
+
+.trip-cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trips-table th,
+.trips-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--secondary-color);
+    text-align: left;
+}
+
+.trips-table thead {
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 /* Hero with overlays */
