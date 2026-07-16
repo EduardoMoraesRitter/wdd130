@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Portrait placeholder for Diego Alves">
+  <rect width="200" height="200" fill="#1b3a4b"/>
+  <circle cx="100" cy="80" r="42" fill="#e8eef1"/>
+  <path d="M30 190c0-45 31-75 70-75s70 30 70 75z" fill="#e8eef1"/>
+  <text x="100" y="112" font-family="Trebuchet MS, Verdana, sans-serif" font-size="30" fill="#1b3a4b" text-anchor="middle" font-weight="bold">DA</text>
+</svg>
